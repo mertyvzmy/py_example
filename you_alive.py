@@ -10,7 +10,7 @@ try:
  _hour = _age.days * 24
  _minute = _hour * 60
  _year = _age.days // 365
- _mont = _age.days % 365 // 30
+ _month = _age.days % 365 // 30
  _day = _age.days % 365 % 30
  _week = _age.days // 7
 
@@ -18,6 +18,6 @@ try:
  print(_hour," Saat")
  print(_age.days," Gün")
  print(_week," Hafta")
- print(_year,"Yıl", _mont, "Ay", _day,"Gündür Hayattasın")
+ print(_year,"Yıl", _month, "Ay", _day,"Gündür Hayattasın")
 except (ValueError):
     print("Lütfen Formata Uygun Şekilde Tarihi Giriniz.")
